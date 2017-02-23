@@ -110,7 +110,7 @@
                                             <ul class="nav navbar-nav navbar-right">
                                                 <li><a href="#banner">Home</a></li>
                                                 <li class="active"><a href="#about">About</a></li>
-                                                <li><a href="https://drive.google.com/open?id=0B3n8yNm7J8WDZ3VzMGFwQ0xjTk0">Resume</a></li>
+                                                <li><a href="docs/cv_aasheesh.pdf">Resume</a></li>
                                                 <li><a href="#research">Projects</a></li>
                                                 <li><a href="https://neuralmonkblog.wordpress.com/">Blog</a></li>
                                             </ul>
@@ -177,10 +177,8 @@
                             
                             
                             <br><br> 
-                            My primary research interest lies in the intersection of deep learning and reinforcement learning in applications to robotics and spoken dialog systems. 
-                            I have also been reading upon Bayesian inference methods to understand human behaviour by forming cognitive models. One particular paper used Inverse modeling(Inverse RL)
-                            to understand the underlying parameters for a simulator type model. In case you have any suggestions for an intersting paper/results in this regard do ping me! 
-                                
+                            My primary research interest lies in the intersection of deep learning and reinforcement learning in applications to vision,robotics and spoken dialog systems. 
+                            Recently i've been reading upon Likelihood free inference methods(<b>A</b>pproximate <b>B</b>ayesian <b>C</b>omputation) in learning cognitive models of human behaviour. Ping me if you've have an interesting suggestion. 
                             <br><br>
                                 
                            
@@ -193,17 +191,17 @@
                             <br/><br>
 
                                 <b></b>
-                            <!--
+                            
                                 <h3 id="exp" class="title">News</h3>
 
              
                                 <UL>
-                                    <li> Aug 2016 - Our <a href="http://mi.eng.cam.ac.uk/~phs26/doc/sgmr16a.pdf">paper</a> won the best student paper award at ACL 2016
-                                    <li> July 2016 - Our <a href="http://mi.eng.cam.ac.uk/~phs26/doc/sgmr16a.pdf">paper</a> got recognised as one of 9 outstanding long papers at ACL 2016
-                                    <li> May 2016 - Accepted to Deep Learning Summer School at Montreal
-                                    <li> Mar 2016 - Served as the Teaching assistant for "Statistical Dialogue Systems" in the <a href="http://www.mlsalt.eng.cam.ac.uk/">MPhil program</a>
+                                    <li> Feb 2017 Back in Delhi from Robotics Research Center,IIIT Hyderabad 
+                                    <li> Dec 2016 - Our team SERO got in Quarterfinals of <b> Texas Instrument Innovation Chanllenge </b> 2016 , received $200 TI boards.
+                                    <li> May 2016 - Completed Research Intern at IIT Madras
+                                    
                                 </UL>
-                             -->  
+                              
                            
 
                                 </div> 
@@ -227,8 +225,9 @@
                         <h2 class="title text-center">Research</h2>
                         <div class="media">
                             <div class="media-body text-right">
-                                <h4 class="media-heading">Research Intern [Dec'16-Feb'17]</h4>
-                                <p><b>Topic: Inverse Reinforcement Learning to prevent SLAM failure</b><br />
+                                <h4 class="media-heading">Robotics Research Center, IIIT-Hyderabad [Dec'16-Feb'17]</h4>
+                                <p><b> Guide: Dr. K.Madhava Krishna </b> ,Principal Investigator RRC 
+                                <p> Preventing Monouclar SLAM Failure using Inverse Reinforcement Learning <br/>  
                                    
                             </div>
                             <div class="media-right">
@@ -240,7 +239,7 @@
                             <div class="media-body text-right">
                                 <h4 class="media-heading">IIT Madras [Summer'16]</h4>
                                 <p><b>Intelligent Systems Lab</b><br />
-                                <b>Focus on</b> Hierarichal Reinforcement Learning methods. <br>Taxi domain(Diettrich,2000) implementation in ROS<br />
+                                <b>Focus on</b> Hierarichal Reinforcement Learning methods(MaxQ,Options) to solve <br>Taxi domain(Diettrich,2000) implementation in ROS<br />
                             </div>
                             <div class="media-right">
                                 <i class="fa fa-file-text"></i>
@@ -283,7 +282,9 @@
                             <div class="media-body">
                                 <h4 class="media-heading">CBSE Class XII,High School</h4>
                                     <p><b>Aggregate:95.6 %</b> 
-                                    <b>GPA:</b> 3.9/4.0<br/>
+                                <h4 class="media-heading">CBSE Class X</h4>
+                                <p> <b> CGPA: 10/10 </b>
+                            
                             </div>
                         </div>
                     </div>
@@ -338,60 +339,49 @@
                     <p><h2>Robotics Research Center, IIIT-Hyderabad  (Dec 2016 - Jan 2017)</h2> 
                     <div class="col-md-2">
                     <center>
-                        <img src="images/work/AI-TuringTestComic.jpg" alt="" width="150" height="50">
+                        <img src="images/resized.jpg" alt="" width="210" height="70">
                         <div class="space"></div>
                     </center>
                     </div>
                     <div class="col-md-10">
-                    <h4><span class="enhance_big">Reward Inference and Dialogue Management for Online Policy Optimisation in Dialogue Systems</span></h4>
-                    <p>
-                    Reinforcement learning based spoken dialogue systems have been shown beneficial by allowing dialogue policy to be optimised to plan and act under the uncertainty introduced by noisy speech recognition and semantic decoding. However, the objective of the optimisation, reward, in SDS is usually hard to measured due to the unknown of the dialogue task on-line and the unreliability of the user satisfaction rating. In addition, these reinforcement signals are often set as an overall evaluation when the dialogue ends and thus sparse, requiring learning system to explore more until it finds the (sub-)optimal solutions. The key focus of the research is to develop a solution to these problems. Recurrent neural networks and Gaussian process are utilised to model the sequential dialogue data for adequate reward function setting for realistic and speeding up dialogue policy learning. An unfied framework for language understading/replying is also aimed with the combination of the proposed dialogue policy framework. [C4-C7]
-                    </p>
+                    <h4><span class="enhance_big"> Max margin IRL agent generates safe navigation trajctories for ORB-SLAM </span></h4>
+                        <a href="doc/intial_Version.pdf"> Paper </a>
+                        <UL>
+                        <li> We have modeled our reward
+function as a linear combination of 5 features and thus solving a Max-margin type
+optimisation problem learning the weights of these features.<li>
+                        <li> Decision Tree Regressor used for approximation for continous state space.</li>
+                        <li> Our expert demonstrations are itself given by a Q-learner type RL agent
+                            with a handcrafted reward function(based on these 5 features).</li>
+                        <li> The optimisation problem can
+be solved by quadratic programming formulation and we are using “cvxopt” python
+                            library for that.</li>
                     </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-10">
                     <p><h2>Indian Institute of Technology,Madras (Summer'16)</h2>
+                    <a href="doc/IIT_MADRAS-work.pdf"> Paper </a> IEEE 4 page format  
+                    
                     <div class="col-md-2">
                     <center>
-                        <img src="images/work/NTUChinese.png" alt="" width="120" height="10">
+                        <img src="images/hrl.jpg" alt="" width="150" height="50">
                         <div class="space"></div>
                     </center>
                     </div>
                     <div class="col-md-10">
-                    <h4><span class="enhance_big">Personalized Dialogue Game for Language Learning</span></h4>
+                    <h4><span class="enhance_big">will update soon</span></h4>
 
-                    <p>
-                    I designed a dialogue game with pronunciation feedback for non-native Chinese learners. It combined spoken dialogue system manager (Markov decision process with reinforcement learning), and Computer-Aided Pronunciation Training evaluator (<span><a href="http://chinese.ntu.edu.tw/">http://chinese.ntu.edu.tw/</a></span>). The system recommended personalized sentences for practicing during the dialogue. I also analyzed real learner data with unsupervised learning methods and applied on simulated learners for system training. This work has also been implemented as a real system. [J1, C1-C3, D1, T1]<br>
-                    </p>
+                    
                     
                     </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                    <p><h2>Robotics Research Center, IIIT-Hyderabad  (Dec 2016 - Jan 2017)</h2> 
-                    <div class="col-md-2">
-                    <center>
-                        <img src="images/work/AI-TuringTestComic.jpg" alt="" width="150" height="50">
-                        <div class="space"></div>
-                    </center>
-                    </div>
-                    <div class="col-md-10">
-                    <h4><span class="enhance_big">Reward Inference and Dialogue Management for Online Policy Optimisation in Dialogue Systems</span></h4>
-                    <p>
-                    Reinforcement learning based spoken dialogue systems have been shown beneficial by allowing dialogue policy to be optimised to plan and act under the uncertainty introduced by noisy speech recognition and semantic decoding. However, the objective of the optimisation, reward, in SDS is usually hard to measured due to the unknown of the dialogue task on-line and the unreliability of the user satisfaction rating. In addition, these reinforcement signals are often set as an overall evaluation when the dialogue ends and thus sparse, requiring learning system to explore more until it finds the (sub-)optimal solutions. The key focus of the research is to develop a solution to these problems. Recurrent neural networks and Gaussian process are utilised to model the sequential dialogue data for adequate reward function setting for realistic and speeding up dialogue policy learning. An unfied framework for language understading/replying is also aimed with the combination of the proposed dialogue policy framework. [C4-C7]
-                    </p>
-                    </div>
-                    </div>
-                </div>
-                <div class="space"></div>
-            </div>
-            </div>
+                
             <!-- section end -->
-        </div>
+</div>
         <!-- section end -->
 
         <!-- section start -->
