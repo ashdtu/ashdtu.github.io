@@ -1,2 +1,2 @@
-  Personal Webpage adopted from Worth Bootstrap. 
+Personal Webpage adopted from Worth Bootstrap. 
 
